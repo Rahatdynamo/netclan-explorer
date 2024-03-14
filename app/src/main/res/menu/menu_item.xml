@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <group android:checkableBehavior="single">
+       <item
+           android:icon="@drawable/profile"
+           android:id="@+id/profile"
+           android:title="My Profile"/>
+       <item
+           android:icon="@drawable/newtork"
+           android:id="@+id/newtork"
+           android:title="My Network"/>
+       <item
+           android:icon="@drawable/jobs"
+           android:id="@+id/jobs"
+           android:title="Jobs"/>
+       <item
+           android:icon="@drawable/bussiness"
+           android:id="@+id/bussiness"
+           android:title="Switch to Bussiness"/>
+
+       <item
+           android:icon="@drawable/location"
+           android:id="@+id/location"
+           android:title="Live Locations"/>
+
+   </group>
+</menu>

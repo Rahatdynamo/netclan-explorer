@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+       <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue1"
+        app:tabSelectedTextColor="@color/white"
+
+           app:tabTextColor="@color/light_grey">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal"
+            a
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merchant"
+            />
+    </com.google.android.material.tabs.TabLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="270dp"
+                android:layout_height="35dp"
+                android:background="@drawable/search_shape"
+                app:queryHint="Search"
+                android:layout_marginStart="20dp"
+                android:layout_marginVertical="20dp"
+                app:iconifiedByDefault="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="1dp">
+            </androidx.appcompat.widget.SearchView>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/filter"
+                android:layout_marginLeft="15dp"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:fillViewport="true"
+           >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:orientation="vertical">
+
+
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="190dp"
+                       >
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="160dp"
+                           android:background="@drawable/user_detail_shape"
+                           android:layout_margin="20dp">
+                           <com.google.android.material.button.MaterialButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="+ INVITE"
+                               android:id="@+id/btn1"
+                               android:onClick="OnButtonCLick"
+                               android:textSize="12sp"
+                               android:textStyle="bold"
+                               android:textColor="@color/light_blue"
+                               android:background="@android:color/transparent"
+                               android:layout_alignParentRight="true"/>
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical">
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="90dp"
+                                   android:text="Micheal Murphy"
+                                   android:textColor="@color/light_blue"
+                                   android:textStyle="bold"
+                                   android:textSize="15sp"
+                                   android:layout_marginTop="40dp"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="90dp"
+                                   android:text="San Francisco,Within 1 Km"
+                                   android:textColor="@color/light_blue"
+                                   android:textSize="10sp"
+                                   android:layout_marginTop="3dp"/>
+                               <ProgressBar
+                                   android:layout_width="100dp"
+                                   android:layout_height="10dp"
+                                   android:layout_marginLeft="90dp"
+                                   android:layout_marginTop="10dp"
+                                   style="?android:attr/progressBarStyleHorizontal"
+                                   android:progressDrawable="@drawable/custom_progress_bar"
+                                   android:max="100"
+                                   android:progress="60"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="25dp"
+                                   android:textStyle="bold"
+                                   android:text="Friendship | Coffee | Hangout"
+                                   android:textColor="@color/light_blue"
+                                   android:textSize="10sp"
+                                   android:layout_marginTop="18dp"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="25dp"
+                                   android:text="Hi community i am open to new connections "
+                                   android:textColor="@color/light_blue"
+                                   android:textSize="10sp"
+                                   android:layout_marginTop="3dp"/>
+
+                           </LinearLayout>
+
+
+
+
+                       </RelativeLayout>
+                       <com.makeramen.roundedimageview.RoundedImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           app:riv_corner_radius="20dip"
+                           android:src="@drawable/person"
+                           android:layout_marginTop="30dp"/>
+
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="190dp"
+                       >
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="160dp"
+                           android:background="@drawable/user_detail_shape"
+                           android:layout_margin="20dp">
+                           <Button
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="+ INVITE"
+                               android:textSize="12sp"
+                               android:id="@+id/btn2"
+                               android:onClick="OnButtonCLick"
+                               android:textStyle="bold"
+                               android:textColor="@color/light_blue"
+                               android:background="@android:color/transparent"
+                               android:layout_alignParentRight="true"/>
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical">
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="90dp"
+                                   android:text="John Doe"
+                                   android:textColor="@color/light_blue"
+                                   android:textStyle="bold"
+                                   android:textSize="15sp"
+                                   android:layout_marginTop="40dp"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="90dp"
+                                   android:text="San Francisco,Within 1 Km"
+                                   android:textColor="@color/light_blue"
+                                   android:textSize="10sp"
+                                   android:layout_marginTop="3dp"/>
+                               <ProgressBar
+                                   android:layout_width="100dp"
+                                   android:layout_height="10dp"
+                                   android:layout_marginLeft="90dp"
+                                   android:layout_marginTop="10dp"
+                                   style="?android:attr/progressBarStyleHorizontal"
+                                   android:progressDrawable="@drawable/custom_progress_bar"
+                                   android:max="100"
+                                   android:progress="40"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="25dp"
+                                   android:textStyle="bold"
+                                   android:text="Coffee | Movies | Hobbies"
+                                   android:textColor="@color/light_blue"
+                                   android:textSize="10sp"
+                                   android:layout_marginTop="18dp"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="25dp"
+                                   android:text="Going to Berkey would love to  share ride with someone"
+                                   android:textColor="@color/light_blue"
+                                   android:textSize="10sp"
+                                   android:layout_marginTop="3dp"/>
+
+                           </LinearLayout>
+
+
+
+                       </RelativeLayout>
+                       <com.makeramen.roundedimageview.RoundedImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           app:riv_corner_radius="20dip"
+                           android:src="@drawable/person"
+                           android:layout_marginTop="30dp"/>
+
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="190dp"
+                       >
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="150dp"
+                           android:background="@drawable/user_detail_shape"
+                           android:layout_margin="20dp">
+                           <Button
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="+ INVITE"
+                               android:textSize="12sp"
+                               android:id="@+id/btn3"
+                               android:onClick="OnButtonCLick"
+                               android:textStyle="bold"
+                               android:textColor="@color/light_blue"
+                               android:background="@android:color/transparent"
+                               android:layout_alignParentRight="true"/>
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical">
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="90dp"
+                                   android:text="James Bond"
+                                   android:textColor="@color/light_blue"
+                                   android:textStyle="bold"
+                                   android:textSize="15sp"
+                                   android:layout_marginTop="40dp"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="90dp"
+                                   android:text="San Francisco,Within 1 Km"
+                                   android:textColor="@color/light_blue"
+                                   android:textSize="10sp"
+                                   android:layout_marginTop="3dp"/>
+                               <ProgressBar
+                                   android:layout_width="100dp"
+                                   android:layout_height="10dp"
+                                   android:layout_marginLeft="90dp"
+                                   android:layout_marginTop="10dp"
+                                   style="?android:attr/progressBarStyleHorizontal"
+                                   android:progressDrawable="@drawable/custom_progress_bar"
+                                   android:max="100"
+                                   android:progress="60"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="25dp"
+                                   android:textStyle="bold"
+                                   android:text="Biking | Coffee | Reading"
+                                   android:textColor="@color/light_blue"
+                                   android:textSize="10sp"
+                                   android:layout_marginTop="18dp"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="25dp"
+                                   android:text="Hi community i am open to new connections "
+                                   android:textColor="@color/light_blue"
+                                   android:textSize="10sp"
+                                   android:layout_marginTop="3dp"/>
+
+                           </LinearLayout>
+
+
+                       </RelativeLayout>
+                       <com.makeramen.roundedimageview.RoundedImageView
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           app:riv_corner_radius="20dip"
+                           android:src="@drawable/person"
+                           android:layout_marginTop="30dp"/>
+
+                   </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="190dp"
+                   >
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="150dp"
+                       android:background="@drawable/user_detail_shape"
+                       android:layout_margin="20dp">
+                       <Button
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="+ INVITE"
+                           android:textSize="12sp"
+                           android:id="@+id/btn4"
+                           android:onClick="OnButtonCLick"
+                           android:textStyle="bold"
+                           android:textColor="@color/light_blue"
+                           android:background="@android:color/transparent"
+                           android:layout_alignParentRight="true"/>
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="90dp"
+                               android:text="Micheal Murphy"
+                               android:textColor="@color/light_blue"
+                               android:textStyle="bold"
+                               android:textSize="15sp"
+                               android:layout_marginTop="40dp"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="90dp"
+                               android:text="San Francisco,Within 1 Km"
+                               android:textColor="@color/light_blue"
+                               android:textSize="10sp"
+                               android:layout_marginTop="3dp"/>
+                           <ProgressBar
+                               android:layout_width="100dp"
+                               android:layout_height="10dp"
+                               android:layout_marginLeft="90dp"
+                               android:layout_marginTop="10dp"
+                               style="?android:attr/progressBarStyleHorizontal"
+                               android:progressDrawable="@drawable/custom_progress_bar"
+                               android:max="100"
+                               android:progress="20"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="25dp"
+                               android:textStyle="bold"
+                               android:text="Friendship | Coffee | Hangout"
+                               android:textColor="@color/light_blue"
+                               android:textSize="10sp"
+                               android:layout_marginTop="18dp"/>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="25dp"
+                               android:text="Hi community i am open to new connections "
+                               android:textColor="@color/light_blue"
+                               android:textSize="10sp"
+                               android:layout_marginTop="3dp"/>
+
+                       </LinearLayout>
+
+
+                   </RelativeLayout>
+                   <com.makeramen.roundedimageview.RoundedImageView
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       app:riv_corner_radius="20dip"
+                       android:src="@drawable/person"
+                       android:layout_marginTop="30dp"/>
+
+               </RelativeLayout>
+
+           </LinearLayout>
+       </ScrollView>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:backgroundTint="@color/white"
+        app:menu="@menu/navigation_item_menu"
+        android:id="@+id/btm_nav"
+        app:itemIconTint="@color/item_navbtn_color"
+        app:itemTextColor="@color/black"
+        app:labelVisibilityMode="labeled"
+        />
+
+
+</LinearLayout>
